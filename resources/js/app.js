@@ -15,15 +15,21 @@ require('./bootstrap');
 require('./components/Example');
 import React, { Component } from 'react';
 import Header from './components/Header.js';
+import Example from './components/Example.js';
+import './app';
 
 import ReactDOM from 'react-dom';
-/* class App extends Component{
-    rende(){
+class App extends Component{
+    render(){
         return (
-            <div>
+            <div className="App">
                 <Header />
+                <Example />
             
             </div>
         )
     }
-} */
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+export default App;

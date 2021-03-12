@@ -4,59 +4,91 @@ import ReactDOM from 'react-dom';
 class Header extends Component {
   render() {
 
-    
+
     return (
-      <header id="home">
-        <div class="site-wrap col-md-10">
-            <div className="site-navbar mt-4">
-                <div className="container py-1">
-                    <div className="row align-items-center">
-                        <div className="col-8 col-md-8 col-lg-4">
-                            <div className="logo mb-0">
-                                <img src="../images/logo-soho-jpg" alt="logo soho"></img>
-                            </div>
-                        </div>
-                        <div className="col-4 col-md-4 col-lg-8">
-                            <nav id="site-navigation text-right text-md-right">
+        <div class="base">
+            <section class="header5 cid fullscreen">
+           <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm transparent bg-color">
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <div class="hamburger">
+                       <span>inicio</span>
+                       <span>nosotros</span>
+                       <span>servicios</span>
+                       <span>casos de éxito</span>
+                       <span>únete al equipo</span>
+                       <span>contacto</span>
+                   </div>
+                   
 
-                                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Mostrar Navegación</a>
-                                <a className="mobile-btn" href="#home" title="Hide navigation">Ocultar Navegación</a>
-
-                                <ul id="nav" className="nav site-menu">
-                                
-                                    <li><a className="smoothscroll" href="#inicio">inicio</a></li>
-                                    <li><a className="smoothscroll" href="#nosotros">nosotros</a></li>
-                                    <li><a className="smoothscroll" href="#servicios">servicios</a></li>
-                                    <li><a className="smoothscroll" href="#testimonials">casos de éxito</a></li>
-                                    <li><a className="smoothscroll" href="#contact">contacto</a></li>
-                                </ul>
-
-                            </nav>
+               </button>
+                <div class="menu-logo">
+                       <div class="navbar-brand">
+                           <span class="navbar-logo">
+                               <a href="#"><img src="../../images/logo-soho.png" alt="logo-sh"></img></a>
+                           </span>
+                       </div>
+                </div>
+           </nav>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        casos de éxito
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        únete al equipo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-white display-4" href="">
+                        contacto
+                        </a>
+                    </li>
+                </ul>
+           </div> 
+        </section>
+        <section class="header5 cid-srs7ZN5URW mbr-fullscreen mbr-parallax-background" id="header5-0">
+            <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(35, 35, 35);">
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="mbr-white col-md-10">
+                        <h1 class="mbr-section-title align-center pb-3 mbr-fonts-style display-1">
+                            Nos especializamos en
+                        </h1>
+                        <h1 class="green mbr-section-title align-center pb-3 mbr-fonts-style display-1">
+                            interfaces digitales que los usuarios aman
+                        </h1>
+                        
+                        <div class="mbr-section-btn align-center">
+                            <a class="btn btn-md btn-secondary display-4" href=" ">LEARN MORE</a>
                         </div>
                     </div>
-                
                 </div>
             </div>
-            <div className="row banner">
-                <div className="banner-text">
-                    <h1 className="responsive-headline mb-2 my-2">Nos especializamos en</h1>
-                    <h1>interfaces digitales que los usuarios aman</h1>
-                    <hr />
-                    
-                </div>
-            </div>
+        </section>
         </div>
         
-
-      
-
-      
-
-      <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-      </p>
-
-   </header>
+        
+        
+     
     );
   }
 }

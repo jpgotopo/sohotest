@@ -4,7 +4,7 @@ import App from '../app';
 
 function Example() {
     return (
-        <div className="container">
+        <section>
             <div className="row justify-content-center">
                 <div className="col-md-8">
                     <div className="card">
@@ -14,7 +14,7 @@ function Example() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
