@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -33,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  /* --font-family-sans-serif: "Nunito", sans-serif; */
+  --font-family-sans-serif: "Graphik-Extralight", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -42,6 +41,10 @@
 *::after {
   box-sizing: border-box;
 }
+.site-wrap {
+    position: relative;
+}
+
 
 html {
   font-family: sans-serif;
@@ -50,16 +53,13 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+/* article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
-@font-face {
-    font-family: 'Graphik-Extralight';
-    src: local('Graphik-Extralight'), url(resources\fonts\Graphik-Extralight.otf)
-}
+ */
 body {
   margin: 0;
-  font-family: 'Graphik-Extralight';
+  font-family: "Graphik-Extralight", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -72,6 +72,41 @@ body {
   outline: 0 !important;
 }
 
+header{
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: #8e8e8e url(../images/header-background.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+.site-navbar{
+  margin-bottom: 0px;
+  width: 100%;
+  border-bottom: none;
+  position: absolute;
+  z-index: 99;
+}
+.site-navbar .site-navigation .site-menu {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+.site-navbar .site-navigation .site-menu > li {
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.banner{
+  font-weight: 900;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -195,10 +230,10 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
+/* img {
   vertical-align: middle;
   border-style: none;
-}
+} */
 
 svg {
   overflow: hidden;
@@ -5588,7 +5623,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
- 
+  font-family: "Graphik-Extralight", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -5690,7 +5725,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
- 
+  font-family: "Graphik-Extralight", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;

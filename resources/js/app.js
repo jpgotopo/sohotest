@@ -13,3 +13,17 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+import React, { Component } from 'react';
+import Header from './components/Header.js';
+
+import ReactDOM from 'react-dom';
+/* class App extends Component{
+    rende(){
+        return (
+            <div>
+                <Header />
+            
+            </div>
+        )
+    }
+} */

@@ -14,11 +14,12 @@
        
         
     </head>
-    <body class="antialiased">
-       
-                <div id="example"></div>
+    <body>
+        
+        <div id="header"><Header /></div>
+        <div id="example"></div>
                 
-            <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
                 
 
             
